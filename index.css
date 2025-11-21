@@ -10,6 +10,10 @@ body {
     background-color: #E2E8DD;
 }
 
+h1 {
+    font-size: 50px;
+}
+
 h1, h2, p {
     color: black;
 }
@@ -44,7 +48,7 @@ nav a {
     font-family: Poppins;
 }
 
-nav a:hover {
+nav a:hover, #food a:hover, #games a:hover {
     background-color: #2E90B8;
 }
 
@@ -62,7 +66,7 @@ main {
 }
 
 #welcomeImage {
-    width: 400px;
+    width: 800px;
     height: auto;
 }
 
@@ -86,17 +90,29 @@ main {
     margin: 0 200px 0 200px;
 }
 
+#welcometext, #food p, #games p {
+    font-size: 20px;
+}
+
 #food {
-    margin: 50px;
+    margin: 50px 50px 200px 50px;
     text-align: center;
     grid-column: 1;
     grid-row: 3;
     border: 2px solid #FA8334;
 }
 
+#food a, #games a {
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease;
+    border-radius: .5em;
+    padding: 5px;
+}
+
 #games {
     border: 2px solid #FA8334;
-    margin: 50px;
+    margin: 50px 50px 200px 50px;
     text-align: center;
     grid-column: 2;
     grid-row: 3;
